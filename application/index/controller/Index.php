@@ -3,7 +3,7 @@ namespace app\index\controller;
 use think\Db;
 class Index
 {
-    public function index()
+    public function index(Input $input, Output $output)
     {
 //        echo 111;
                 $admin_cate_id = db::name('admin')->where('id',1)->value('admin_cate_id');
@@ -21,7 +21,7 @@ class Index
     {
         echo 444;
     }
-    protected function execute()
+    protected function execute(Input $input, Output $output)
     {
         echo 333;
 //        $admin_cate_id = db::name('admin')->where('id',1)->value('admin_cate_id');
