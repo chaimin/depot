@@ -3,13 +3,14 @@ namespace app\index\controller;
 use think\Db;
 class Index
 {
-    public function index(Input $input, Output $output)
+    //Input $input, Output $output
+    public function index()
     {
-//        echo 111;
-                $admin_cate_id = db::name('admin')->where('id',1)->value('admin_cate_id');
-        $where = [];
-        $where['admin_cate_id'] = $admin_cate_id + 1;
-        db::name('admin')->where('id',1)->update($where);
+        echo 111;
+//                $admin_cate_id = db::name('admin')->where('id',1)->value('admin_cate_id');
+//        $where = [];
+//        $where['admin_cate_id'] = $admin_cate_id + 1;
+//        db::name('admin')->where('id',1)->update($where);
     }
 
     public function foraa()
