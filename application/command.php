@@ -10,5 +10,6 @@
 // +----------------------------------------------------------------------
 
 return [
-    'app\index\Index\index'
+    'app\index\Index\index',
+    'app\index\User\index'
 ];
