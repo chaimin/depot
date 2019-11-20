@@ -6,13 +6,15 @@ class Index
     //Input $input, Output $output
     public function index()
     {
-        echo 333;
+        $admin_cate_id = db::name('admin')->where('id',1)->select();
+      echo  db::name('admin')->getLastSql();
+die;
         $admin_cate_id = db::name('admin')->where('id',1)->value('admin_cate_id');
         $where = [];
         $where['admin_cate_id'] = $admin_cate_id + 1;
         if(db::name('admin')->where('id',1)->update($where))
         {
-            echo 11;
+           // echo 11;
         }
         else
         {
